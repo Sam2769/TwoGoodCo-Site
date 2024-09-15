@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gilroy";
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#page1 {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  padding-top: 17vh;
+  padding-left: 1vw;
+}
+
+#page1 h1 {
+  font-family: futura;
+  font-size: 15vw;
+  line-height: 13vw;
+  letter-spacing: -5px;
+}
+
+#video-container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: grey;
+}
+
+#video-container video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#video-container #play {
+  padding: 3vw 2.7vw;
+  font-family: futura;
+  color: #fff;
+  background-color: #000;
+  border-radius: 50%;
+  position: fixed;
+  opacity: 0;
+  scale: 0;
+}
