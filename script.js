@@ -1,3 +1,8 @@
+const scroll = new LocomotiveScroll({
+  el: document.querySelector("#main"),
+  smooth: true,
+});
+
 let videoContainer = document.getElementById("video-container");
 let playElement = document.getElementById("play");
 console.dir(playElement);
@@ -18,8 +23,8 @@ videoContainer.addEventListener("mouseleave", () => {
 
 videoContainer.addEventListener("mousemove", (details) => {
   gsap.to(playElement, {
-    left: details.x - 50,
-    top: details.y - 80,
+    left: details.x,
+    top: details.y - 70,
   });
 });
 
