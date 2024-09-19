@@ -42,3 +42,16 @@ gsap.from("#video-container", {
   duration: 1.5,
   y: 100,
 });
+
+let cursor = document.querySelector("#cursor");
+
+document.addEventListener("mousemove", (dets) => {
+  gsap.to(cursor, {
+    top: dets.y,
+    left: dets.x,
+  });
+});
+
+let childArray = Array.from(document.getElementsByClassName("child"));
+console.log(childArray);
+console.log(childArray[0]);
