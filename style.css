@@ -275,6 +275,34 @@ body {
   transform: translate(-50%, -50%) scale(0);
 }
 
+.swiperElem {
+  width: 100%;
+  height: 40vh;
+  background-color: burlywood;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#message {
+  font-family: futura;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 72px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  min-height: 25vh;
+}
+
+#page4 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
 @media (max-width: 600px) {
   #page1 {
     width: 100%;

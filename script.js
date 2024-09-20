@@ -1,4 +1,4 @@
-const newFunction = () => {
+function locomotiveAnimation() {
   gsap.registerPlugin(ScrollTrigger);
 
   // Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
@@ -36,9 +36,9 @@ const newFunction = () => {
 
   // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
   ScrollTrigger.refresh();
-};
+}
 
-newFunction;
+locomotiveAnimation();
 
 let videoContainer = document.getElementById("video-container");
 let playElement = document.getElementById("play");
@@ -66,7 +66,7 @@ let videoFunction = () => {
   });
 };
 
-videoFunction;
+videoFunction();
 
 gsap.from("#page1 h1", {
   y: 100,
