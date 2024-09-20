@@ -111,3 +111,9 @@ childArray.forEach((elem) => {
   elem.addEventListener("mouseenter", displayCursor);
   elem.addEventListener("mouseleave", hideCursor);
 });
+
+// SWIPER JS ****************
+
+var swiper = new Swiper(".mySwiper", {});
+
+// ***************************

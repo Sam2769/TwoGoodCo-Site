@@ -277,13 +277,12 @@ body {
 
 .swiperElem {
   width: 100%;
-  height: 40vh;
+  height: 60vh;
   background-color: burlywood;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 
 #message {
   font-family: futura;
@@ -291,10 +290,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 72px;
+  font-size: 65px;
   font-weight: 500;
   letter-spacing: -0.03em;
-  min-height: 25vh;
+  min-height: 30vh;
 }
 
 #page4 {
@@ -302,6 +301,56 @@ body {
   height: 100vh;
   position: relative;
 }
+
+#page4-start {
+  width: 100%;
+  height: 30vh;
+  background-color: burlywood;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#blackButton {
+  border-radius: 50%;
+  padding: 1.4vw 1.3vw;
+  background-color: black;
+  color: #fff;
+  font-family: futura;
+  text-transform: uppercase;
+}
+
+/* *********** SWIPER CSS **************** */
+
+.swiper {
+  width: 100%;
+  min-height: 60vh;
+  margin-top: 2vh;
+  background-color: red;
+}
+
+.swiper-slide h2 {
+  font-size: 40px;
+  margin-bottom: 4vh;
+  font-family: futura;
+}
+
+.swiper-slide {
+  display: flex;
+  width: 20%;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* .swiper-slide img {
+  display: block;
+  width: 25%;
+  height: 25%;
+  object-fit: cover;
+} */
+
+/* ***************************************** */
 
 @media (max-width: 600px) {
   #page1 {
