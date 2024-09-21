@@ -290,7 +290,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 65px;
+  font-size: 50px;
   font-weight: 500;
   letter-spacing: -0.03em;
   min-height: 30vh;
@@ -321,12 +321,51 @@ body {
   text-transform: uppercase;
 }
 
+.end {
+  height: 120vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#left-end,
+#right-end,
+#center-end {
+  margin-top: 15%;
+  font-family: helvetica;
+}
+
+#left-end {
+  height: 20vh;
+  width: 15%;
+  padding: 0 25px;
+}
+
+#left-end h4 {
+  margin-bottom: 20px;
+  color: grey;
+  font-weight: 450;
+}
+
+#right-end {
+  height: 20vh;
+  width: 15%;
+  padding: 0 25px;
+  text-align: right;
+}
+
+#right-end h4 {
+  margin-bottom: 20px;
+  color: grey;
+  font-weight: 450;
+}
+
 /* *********** SWIPER CSS **************** */
 
 .swiper {
   width: 100%;
   min-height: 60vh;
-  margin-top: 2vh;
+  margin-top: 10vh;
 }
 
 .swiper-slide h2 {
@@ -343,12 +382,51 @@ body {
   align-items: center;
 }
 
-/* .swiper-slide img {
-  display: block;
-  width: 25%;
-  height: 25%;
-  object-fit: cover;
-} */
+#page5 {
+  width: 100%;
+  min-height: 100vh;
+  /* background-color: burlywood; */
+  display: flex;
+  justify-content: space-between;
+}
+
+#page5 #impact h3 {
+  font-family: futura;
+  font-size: 1.5rem;
+  line-height: 0.9;
+  margin-bottom: 30px;
+}
+
+#page5 #impact p {
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  line-height: 1.5;
+  font-family: helvetica;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+#page5 #impact {
+  width: 35%;
+  padding-right: 5vw;
+  padding-left: 2vw;
+  height: 100%;
+}
+
+#page5 #memberImages {
+  display: flex;
+  position: relative;
+  /* background-color: blue; */
+  width: 65%;
+  justify-content: space-around;
+  padding-right: 5vw;
+}
+#page5 #memberImages img {
+  width: 29vw;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
 
 /* ***************************************** */
 

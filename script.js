@@ -76,7 +76,6 @@ gsap.from("#page1 h1", {
   duration: 0.9,
 });
 
-
 gsap.from("#video-container", {
   opacity: 0,
   delay: 1.3,
