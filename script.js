@@ -38,6 +38,69 @@ function locomotiveAnimation() {
   ScrollTrigger.refresh();
 }
 
+/*
+let navpart1 = document.querySelector("#nav-part1");
+let svgs = Array.from(navpart1.querySelectorAll("svg"));
+
+svgs.forEach((elem) => {
+  gsap.to(elem, {
+    transform: "translateY(-100%)",
+    scrollTrigger: {
+      trigger: "#page1",
+      scroller: "#main",
+      markers: true,
+      starters: "top 0",
+      end: "top -5%",
+      scrub: true,
+    },
+  });
+});
+let navpart2 = document.querySelector("#nav-part2");
+let links = navpart2.querySelector("#links");
+console.log(links);
+let anchorTags = Array.from(links.querySelectorAll("a"));
+console.dir(anchorTags);
+
+anchorTags.forEach((elem) => {
+  gsap.to(elem, {
+    transform: "translateY(-100%)",
+    opacity: 0,
+    scrollTrigger: {
+      trigger: "#page1",
+      scroller: "#main",
+      markers: true,
+      starters: "top 0",
+      end: "top -5%",
+      scrub: true,
+    },
+  });
+});
+// gsap.to("#nav-part1 svg", {
+//   transform: "translateY(-100%)",
+//   scrollTrigger: {
+//     trigger: "#page1",
+//     scroller: "#main",
+//     markers: true,
+//     starters: "top 0",
+//     end: "top -5%",
+//     scrub: true,
+//   },
+// });
+// gsap.to("#nav-part2 #links", {
+//   transform: "translateY(-100%)",
+//   opacity: 0,
+//   scrollTrigger: {
+//     trigger: "#page1",
+//     scroller: "#main",
+//     markers: true,
+//     starters: "top 0",
+//     end: "top -5%",
+//     scrub: true,
+//   },
+// });
+
+*/
+
 locomotiveAnimation();
 
 let videoContainer = document.getElementById("video-container");
@@ -108,8 +171,8 @@ let hideCursor = () => {
 };
 
 childArray.forEach((elem) => {
-  elem.addEventListener("mouseenter", displayCursor);
-  elem.addEventListener("mouseleave", hideCursor);
+  elem.addEventListener("mouseenter", displayCursor());
+  elem.addEventListener("mouseleave", hideCursor());
 });
 
 // SWIPER JS ****************
