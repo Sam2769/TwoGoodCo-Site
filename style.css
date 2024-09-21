@@ -429,6 +429,13 @@ body {
 
 /* ***************************************** */
 
+/* Media Query for My personal Phone*/
+
+@media (max-height: 820px) {
+  #page2 {
+    flex-direction: column;
+  }
+}
 @media (max-width: 600px) {
   #nav {
     width: 100%;
@@ -460,7 +467,7 @@ body {
   }
 
   #links {
-    display:none;
+    display: none;
     padding: 10px;
   }
 
