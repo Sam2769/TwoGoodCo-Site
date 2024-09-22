@@ -147,36 +147,60 @@ gsap.from("#video-container", {
 });
 
 let cursor = document.querySelector("#cursor");
-console.log(cursor);
 
-document.addEventListener("mousemove", (dets) => {
-  gsap.to(cursor, {
-    top: dets.y,
-    left: dets.x,
-  });
-});
-
-let childArray = Array.from(document.getElementsByClassName("child"));
+// document.addEventListener("mousemove", (dets) => {
+//   gsap.to(cursor, {
+//     top: dets.y,
+//     left: dets.x,
+//   });
+// });
 
 let displayCursor = () => {
   gsap.to(cursor, {
     transform: "translate(-50%, -50%) scale(1)",
   });
+
+  console.log("Mouse entered");
 };
 
 let hideCursor = () => {
   gsap.to(cursor, {
     transform: "translate(-50%, -50%) scale(0)",
   });
+  console.log("mouse exited");
 };
+let childArray = Array.from(document.getElementsByClassName("child"));
 
-childArray.forEach((elem) => {
-  elem.addEventListener("mouseenter", displayCursor());
-  elem.addEventListener("mouseleave", hideCursor());
-});
+let page3 = document.getElementById("page3");
+page3.addEventListener("mouseenter", displayCursor());
+page3.addEventListener("mouseleave", hideCursor());
+
+// childArray.forEach((elem) => {
+//   elem.addEventListener("mouseenter", displayCursor());
+//   elem.addEventListener("mouseleave", hideCursor());
+// });
 
 // SWIPER JS ****************
 
 var swiper = new Swiper(".mySwiper", {});
 
 // ***************************
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   let lastScrollTop = 0;
+//   const navbar = document.getElementById("nav");
+
+//   window.addEventListener("scroll", function () {
+//     var scrollPosition = window.scrollY;
+//     console.log(scrollPosition);
+//   });
+
+//   if (scrollTop > lastScrollTop) {
+//     // Scroll down
+//     navbar.style.top = "-100px"; // Adjust as needed
+//   } else {
+//     // Scroll up
+//     navbar.style.top = "0";
+//   }
+//   lastScrollTop = scrollTop;
+// });

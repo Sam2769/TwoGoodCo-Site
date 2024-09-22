@@ -271,7 +271,7 @@ body {
   border-radius: 50%;
   position: fixed;
   background-color: rgb(240, 212, 212);
-  transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .swiperElem {
@@ -429,13 +429,6 @@ body {
 
 /* ***************************************** */
 
-/* Media Query for My personal Phone*/
-
-@media (max-height: 820px) {
-  #page2 {
-    flex-direction: column;
-  }
-}
 @media (max-width: 600px) {
   #nav {
     width: 100%;
